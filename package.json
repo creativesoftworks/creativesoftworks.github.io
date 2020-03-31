@@ -1,0 +1,20 @@
+{
+  "name": "creativesoftworks.github.io",
+  "version": "0.0.1",
+  "description": "Creative Softworks website",
+  "main": "index.js",
+  "repository": "git@github.com:creativesoftworks/creativesoftworks.github.io.git",
+  "author": "Ricardo Oliveira",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "build-dev": "postcss --use tailwindcss --use autoprefixer -o main.css css/*.css",
+    "build": "postcss -o main.css css/*.css"
+  },
+  "devDependencies": {
+    "tailwindcss": "1.2.0",
+    "postcss-cli": "7.1.0",
+    "autoprefixer": "9.7.5",
+    "@fullhuman/postcss-purgecss": "2.1.0"
+  }
+}
